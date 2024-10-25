@@ -80,7 +80,6 @@ input{
   padding: 16px 34px;
   align-items: center;
   gap: 10px;
-  width: 70%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -105,4 +104,7 @@ button{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+button:active{
+  background: #25A572;
 }
