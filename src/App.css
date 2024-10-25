@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+
+/* Font-face definitions */
+@font-face {
+  font-family: 'Uniform';
+  src: url('./Assets/Fonts/UniformRnd-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Assets/Fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Assets/Fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Assets/Fonts/Poppins-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+body{
+  background-color: #BFECFF;
+}
+p, label{
+  font-family: "Poppins";
+}
+h1, h3, h5, h6{
+  font-family: "Uniform";
+
+}
+h6{
+  font-size: 18px;
+}
+a{
+  color: #1DB4FF;
+}
+h5{
+  color: #314A81;
+  font-size: 20px;
+}
+h1{
+  color: #314A81;
+  font-size: 40px;
+}
+.whole-page{
+  padding: 10%;
+}
+.flex-column{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.text-center{
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.merch{
+  background: #83D9F9;
+  border-radius: 30px;
+  padding: 10px;
+}
+.merch > p{
+  margin-top: -10px;
+  font-size: 25px;
+}
+input{
+  border-radius: 10px;
+  border: 3px solid #0F7FFF;
+  background: #FFF;
+  display: inline-flex;
+  padding: 16px 34px;
+  align-items: center;
+  gap: 10px;
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+input[type="email"]::placeholder {
+  font-family: "Poppins";
+  color: #999; 
+  font-style: italic; 
+}
+button{
+  display: inline-flex;
+  padding: 5px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #15C77F;
+  color: #FFF;
+  text-align: center;
+  border: #15C77F solid;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
